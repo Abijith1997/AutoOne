@@ -15,7 +15,6 @@ export const DropDown = ({
   const [iconSize, setIconSize] = useState<number>(15);
 
   const handleSelect = (value: string) => {
-    console.log("handle select called");
     setValue(value);
     setOpened(false);
   };
@@ -39,7 +38,6 @@ export const DropDown = ({
       const overflowRight = rect.right > window.innerWidth;
       const overflowLeft = rect.left < 0;
 
-      // Adjust dynamically if overflowing
       if (overflowRight) {
         menuRef.current.style.left = "auto";
         menuRef.current.style.right = "0";

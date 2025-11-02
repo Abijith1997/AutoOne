@@ -6,12 +6,11 @@ import {
 import { carsApi } from "../api/carsApi";
 import type { CarProps, CarsQueryParams, CarsResponse } from "../types";
 
-// Async thunk to fetch cars
 export const fetchCars = createAsyncThunk(
   "cars/fetchCars",
   async (params?: CarsQueryParams) => {
     const response = await carsApi.getAll(params);
-    return response; // CarsResponse
+    return response;
   }
 );
 

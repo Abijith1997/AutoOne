@@ -1,4 +1,3 @@
-// src/store/cartSlice.ts
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type { CarProps } from "../types";
 
