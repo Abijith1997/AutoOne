@@ -42,8 +42,6 @@ export const CarList = ({ sort, color, manufacturer }: CarListProps) => {
     fetchCars(page);
   }, [page, sort, color, manufacturer]);
 
-  if (loading) return <p>Loading cars...</p>;
-
   return (
     <div className="sm:p-4 p-2 flex-1">
       <h2 className="text-md sm:text-2xl font-bold mb-2">Available Cars</h2>
